@@ -1,14 +1,15 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import "./ArticlePage.css";
+import { useSelector } from "react-redux";
+import Count from "../components/Count";
 
 const ArticlePage = () => {
-    const pathname = useLocation().pathname;
+    const count = useSelector((state) => state.count);
     return (
         <>
-        <h1>記事一覧</h1>
-        <p>現在のパス:{pathname}</p>
+        <Count />
         </>
     );
-};
+}
 
 export default ArticlePage;

@@ -7,3 +7,12 @@
 h1, p {
     color: #000;
 }
+
+.ttl {
+    color: #000;
+}
+
+.box {
+    width: 315px;
+    height: auto;
+}
